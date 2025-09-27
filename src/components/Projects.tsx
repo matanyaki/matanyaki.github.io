@@ -27,11 +27,7 @@ const Projects = () => {
       icon: Search,
       technologies: ["Python", "Trie Structures", "Algorithms"],
       category: "Algorithms",
-<<<<<<< HEAD
-       githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
-=======
       githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
->>>>>>> efb091414d0e27dd6448a76f47f9481edd6d24f6
     },
     {
       title: "Kaleidoo.ai ETL Pipeline",
