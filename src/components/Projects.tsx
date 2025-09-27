@@ -19,7 +19,7 @@ const Projects = () => {
       icon: Database,
       technologies: ["JavaScript", "AJAX", "SQL Server", "MVC"],
       category: "Full-Stack",
-      githubUrl: "#"
+      githubUrl: "https://github.com/matanyaki/Color-Management-Store"
     },
     {
       title: "Google Autocomplete Algorithm",
