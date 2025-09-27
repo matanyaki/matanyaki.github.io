@@ -10,42 +10,48 @@ const Projects = () => {
       description: "Python-based application using Flask and OpenAI's GPT-3.5 Turbo API to automate PowerPoint presentation summarization. Features backend processing, API integration, and CLI interface.",
       icon: Presentation,
       technologies: ["Python", "Flask", "OpenAI API", "CLI"],
-      category: "AI/ML"
+      category: "AI/ML",
+      githubUrl: "https://github.com/matanyaki/ChatGPT-Explainer"
     },
     {
       title: "Color Management Store",
       description: "Full-stack web application built with MVC architecture. Features AJAX-based dynamic UI, secure SQL Server database, and interactive color selection interface.",
       icon: Database,
       technologies: ["JavaScript", "AJAX", "SQL Server", "MVC"],
-      category: "Full-Stack"
+      category: "Full-Stack",
+      githubUrl: "#"
     },
     {
       title: "Google Autocomplete Algorithm",
       description: "Advanced autocomplete system in Python with spell error correction. Implemented Trie data structures and Levenshtein distance for optimized memory and runtime performance.",
       icon: Search,
       technologies: ["Python", "Trie Structures", "Algorithms"],
-      category: "Algorithms"
+      category: "Algorithms",
+      githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
     },
     {
       title: "Kaleidoo.ai ETL Pipeline",
       description: "AI-powered data processing application using Hugging Face models. Manages structured and unstructured data with SQLite optimization for enhanced query performance.",
       icon: Bot,
       technologies: ["Python", "Hugging Face", "SQLite", "ETL"],
-      category: "AI/ML"
+      category: "AI/ML",
+      githubUrl: "https://github.com/matanyaki/Kaleidoo-Project"
     },
     {
       title: "CheckPoint Firewall",
       description: "Basic firewall implementation on Linux using network and kernel module knowledge. Utilized profiling tools for debugging and memory management optimization.",
       icon: Shield,
       technologies: ["Linux", "Network Programming", "Kernel Modules"],
-      category: "Security"
+      category: "Security",
+      githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
     },
     {
       title: "Unity Indie Game",
       description: "Indie game development project exploring game design fundamentals. Gained experience with physics, graphics, and user interface development in Unity engine.",
       icon: Gamepad2,
       technologies: ["Unity", "C#", "Game Design"],
-      category: "Game Dev"
+      category: "Game Dev",
+      githubUrl: "https://github.com/matanyaki/TileVania"
     }
   ];
 
@@ -106,6 +112,8 @@ const Projects = () => {
                     size="sm" 
                     variant="outline"
                     className="flex-1 border-primary/50 hover:border-primary hover:bg-primary/10"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
+                    disabled={project.githubUrl === '#'}
                   >
                     <ExternalLink className="w-4 h-4 mr-1" />
                     View
