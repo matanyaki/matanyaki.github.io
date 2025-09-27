@@ -27,7 +27,11 @@ const Projects = () => {
       icon: Search,
       technologies: ["Python", "Trie Structures", "Algorithms"],
       category: "Algorithms",
+<<<<<<< HEAD
        githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
+=======
+      githubUrl: "https://github.com/matanyaki/Checkpoint-Project"
+>>>>>>> efb091414d0e27dd6448a76f47f9481edd6d24f6
     },
     {
       title: "Kaleidoo.ai ETL Pipeline",
@@ -112,6 +116,8 @@ const Projects = () => {
                     size="sm" 
                     variant="outline"
                     className="flex-1 border-primary/50 hover:border-primary hover:bg-primary/10"
+                    onClick={() => window.open(project.githubUrl, '_blank')}
+                    disabled={project.githubUrl === '#'}
                   >
                     <ExternalLink className="w-4 h-4 mr-1" />
                     View
