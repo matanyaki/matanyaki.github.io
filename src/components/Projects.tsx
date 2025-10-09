@@ -14,14 +14,6 @@ const Projects = () => {
       githubUrl: "https://github.com/matanyaki/ChatGPT-Explainer"
     },
     {
-      title: "Color Management Store",
-      description: "Full-stack web application built with MVC architecture. Features AJAX-based dynamic UI, secure SQL Server database, and interactive color selection interface.",
-      icon: Database,
-      technologies: ["JavaScript", "AJAX", "SQL Server", "MVC"],
-      category: "Full-Stack",
-      githubUrl: "https://github.com/matanyaki/Color-Management-Store"
-    },
-    {
       title: "Google Autocomplete Algorithm",
       description: "Advanced autocomplete system in Python with spell error correction. Implemented Trie data structures and Levenshtein distance for optimized memory and runtime performance.",
       icon: Search,
@@ -134,12 +126,8 @@ const Projects = () => {
           <Button 
             variant="outline"
             className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 card-hover"
+            onClick={() => window.open('https://github.com/matanyaki', '_blank')}
           >
-           <a 
-            href="https://github.com/matanyaki?tab=repositories" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          ></a>
             <Github className="w-5 h-5 mr-2" />
             View All Projects on GitHub
           </Button>
